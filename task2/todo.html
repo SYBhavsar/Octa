@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1>Todo List</h1>
+  <div id="todo-container">
+    <input type="text" id="todo-input" placeholder="Enter a task" required>
+    <div id="radio-container">
+      <label for="priority-high">
+        <input type="radio" id="priority-high" name="priority" value="high"> High
+      </label>
+      <label for="priority-medium">
+        <input type="radio" id="priority-medium" name="priority" value="medium"> Medium
+      </label>
+      <label for="priority-low">
+        <input type="radio" id="priority-low" name="priority" value="low"> Low
+      </label>
+    </div>
+    <button type="submit" id="add-btn">Add</button>
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
